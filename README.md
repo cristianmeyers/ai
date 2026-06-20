@@ -54,3 +54,15 @@ graph TD
 - **Séparation des responsabilités :** La séparation entre la VM Docker (n8n/WebUI) et le serveur d'inférence (Ubuntu/GPU) permet de ne pas surcharger les ressources de l'orchestrateur lors des pics de calcul.
 - **Optimisation GPU :** L'usage de l'architecture Pascal avec `llama.cpp` permet de tirer parti des 10 Go de VRAM pour charger efficacement les poids des modèles Gemma et Qwen en local.
 - **Sécurité :** L'absence d'exposition directe sur Internet, couplée à l'usage de Tailscale, réduit drastiquement la surface d'attaque.
+
+---
+
+## Examples
+
+### Open Web UI
+
+![alt text](img/owui.png)
+
+### N8n
+
+![alt text](img/n8n.png)
